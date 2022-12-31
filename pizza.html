@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,500;1,900&display=swap'); 
+    
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .element{
+            width: 87%;
+            height: 230px;
+            margin: 10px 0px;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.445);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 10x;
+        }
+
+        .top{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .image img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .image{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+
+        }
+        .right-side{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 60%;
+        }
+
+        .desc{
+            padding-bottom: 20px;
+        }
+
+        select{
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .select1{
+            width: 46%;
+        }
+
+        .select2{
+            width: 46%;
+        }
+        
+        .select-elements{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .order{
+            background-color: rgb(0, 180, 0);
+            width: 95%;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+
+        }
+
+        .ordered{
+            background-color: rgb(106, 107, 107);
+        }
+
+
+
+        .checkout{
+            position:fixed;
+            bottom: 10px;
+            width: 90%;
+            height: 50px;
+            background-color: aquamarine;
+            left: 5%;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/spicy_chicken.jpg" alt="">
+                    <div class="price">SAR 63.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">SPICY CHICKEN RANCH</div>
+                    <div class="desc">A grilled chicken pizza with ranch sauce...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/pizza.jfif" alt="">
+                    <div class="price">SAR 30.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">Margherita Pizza</div>
+                    <div class="desc">This is the best Margherita Pizza ...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/3.jpg" alt="">
+                    <div class="price">SAR 43.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">Pepperoni and Burrata Pizza</div>
+                    <div class="desc">A grilled chicken pizza with ranch sauce...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/pizza.jfif" alt="">
+                    <div class="price">SAR 63.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">SPICY CHICKEN RANCH</div>
+                    <div class="desc">A grilled chicken pizza with ranch sauce...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/pizza.jfif" alt="">
+                    <div class="price">SAR 63.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">SPICY CHICKEN RANCH</div>
+                    <div class="desc">A grilled chicken pizza with ranch sauce...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="top">
+                <div class="image">
+                    <img src="./images/pizza.jfif" alt="">
+                    <div class="price">SAR 63.00</div>
+                </div>
+                <div class="right-side">
+                    <div class="name">SPICY CHICKEN RANCH</div>
+                    <div class="desc">A grilled chicken pizza with ranch sauce...</div>
+                    <div class="selecting">
+                        <div class="selecting-text">
+                            Select Size & Crust
+                        </div>
+                        <div class="select-elements">
+                            <select name="" id="" class="select1">
+                                <option value="">Large</option>
+                                <option value="">Meduim</option>
+                                <option value="">Small</option>
+                                
+                            </select>
+                            <select name="" id="" class="select2">
+                                <option value="">Pan</option>
+                                <option value="">Thin N crispy</option>
+                                <option value="">San Francisco</option>
+                                <option value="">Stuffed Crust</option>
+                                <option value="">Cheesy Bites</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="order">
+                    order
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <div class="checkout">
+        CHECKOUT
+    </div>
+
+    <script>
+        let orders = document.querySelectorAll(".order");
+
+        orders.forEach(order => {
+            order.addEventListener("click", function(e){
+                order.textContent = "Ordered";
+                order.classList.add("ordered");
+            })
+            
+        });
+
+        let checkout = document.querySelector(".checkout");
+
+        checkout.addEventListener("click", function(e){
+            alert("your order has been send!")
+        })
+
+    </script>
+
+</body>
+</html>
